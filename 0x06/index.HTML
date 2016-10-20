@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>0x06</title>
+    <meta charset="utf-8">
+    <script src="../angular/angular.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <span>My name is </span><p>{{name}}</p> 
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.name = "khaled";
+        });
+    </script>
+</body>
+
+</html>
